@@ -1,1 +1,1 @@
-Small inventory management app for Headstarter AI project. 
+Small inventory management app for Headstarter AI project.,
