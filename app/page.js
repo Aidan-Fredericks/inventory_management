@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import {useState, useEffect} from 'react'
-import {firestore} from '@/firebase'
+import {firestore} from '@/firebase.config'
 import {Box, Button, Modal, Stack, TextField, Typography} from '@mui/material'
 import {collection, deleteDoc, doc, getDoc, getDocs, query, setDoc} from "firebase/firestore";
 
