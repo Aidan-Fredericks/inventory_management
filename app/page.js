@@ -118,18 +118,21 @@ export default function Home() {
         Add New Item
       </Button>
       <Box border='1px solid #333'>
-        <Box
-          width="800px"
-          height="100px"
-          bgcolor="#ADD8E6"
-          display="flex"
-          alignItems="center"
-          justifyContent="center">
-            <Typography
-              variant="h2" color="#333">
-                Inventory Items
-              </Typography>
-        </Box>
+        <Stack width="100%" direction="row" spacing={2}>
+          <Box
+            width="800px"
+            height="100px"
+            bgcolor="#ADD8E6"
+            display="flex"
+            alignItems="center"
+            justifyContent="center">
+              <Typography
+                variant="h2" color="#333">
+                  Inventory Items
+                </Typography>
+              <TextField display="flex" alignItems="center" justifyContent="center" id="outlined-search" label="Search field" type="search" />
+          </Box>
+        </Stack>
       <Stack width="800px" height="300px" spacing={2} overflow="auto">
         {inventory.map(({name, quantity}) => (
           <Box
